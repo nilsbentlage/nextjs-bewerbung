@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import { Typography } from "@material-ui/core";
 
 function Contact() {
-    return (
-        <div>
-            Contact
-        </div>
-    )
+  return <section id="contact"><Typography variant="h1">Contact</Typography></section>;
 }
 
-export default Contact
+export default Contact;

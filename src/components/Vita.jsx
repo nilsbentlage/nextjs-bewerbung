@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import { Typography } from "@material-ui/core";
 
 function Vita() {
-    return (
-        <div>
-            Vita
-        </div>
-    )
+  return <section id="vita"><Typography variant="h1">Vita</Typography></section>;
 }
 
-export default Vita
+export default Vita;

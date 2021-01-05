@@ -7,3 +7,34 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+section {
+  min-height: 100vh;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+div::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+a.fabMenuLink {
+  color: white;
+}
+
+div.skill {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.extraMargin {
+  padding: 1.2rem 2.4rem;
+  height: 100%;
+}

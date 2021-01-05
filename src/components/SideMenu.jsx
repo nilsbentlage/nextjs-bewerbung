@@ -2,7 +2,7 @@ import React from "react";
 
 import { Grid, Link } from "@material-ui/core";
 
-function MenuItem(props) {
+function SideMenuItem(props) {
   return (
     <Grid item xs={12} align="center">
       <Link href={props.href}>{props.children}</Link>
@@ -20,11 +20,11 @@ function Menu() {
       spacing={4}
       style={{ height: "100vh" }}
     >
-      <MenuItem href="#home">Home</MenuItem>
-      <MenuItem href="#skills">Skills</MenuItem>
-      <MenuItem href="#vita">Vita</MenuItem>
-      <MenuItem href="#showcase">Showcase</MenuItem>
-      <MenuItem href="#contact">Contact</MenuItem>
+      <SideMenuItem href="#home">Home</SideMenuItem>
+      <SideMenuItem href="#skills">Skills</SideMenuItem>
+      <SideMenuItem href="#vita">Vita</SideMenuItem>
+      <SideMenuItem href="#showcase">Showcase</SideMenuItem>
+      <SideMenuItem href="#contact">Contact</SideMenuItem>
     </Grid>
   );
 }

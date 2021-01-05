@@ -4,10 +4,15 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import {
+  createMuiTheme,
+  ThemeProvider,
+  responsiveFontSizes,
+} from "@material-ui/core/styles";
 import indigo from "@material-ui/core/colors/indigo";
 
-const theme = createMuiTheme({
+let theme = createMuiTheme({
+  spacing: 10,
   palette: {
     type: "dark",
     primary: indigo,
@@ -15,7 +20,16 @@ const theme = createMuiTheme({
       main: "#aeea00",
     },
   },
+  typography: {
+    h5: {
+      marginTop: "1rem",
+      marginBottom: ".5rem",
+      borderBottom: "1px solid rgba(255,255,255,0.5)"
+    }
+  }
 });
+
+theme = responsiveFontSizes(theme);
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
