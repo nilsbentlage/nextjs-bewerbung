@@ -9,11 +9,12 @@ body {
 }
 
 section {
-  min-height: 100vh;
   padding: 0 1rem;
   display: flex;
+  width: 100%;
+  min-height: 100vh;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 div::-webkit-scrollbar {
@@ -35,6 +36,12 @@ div.skill {
 }
 
 .extraMargin {
-  padding: 1.2rem 2.4rem;
+  padding: 2rem;
+  box-sizing: border-box;
   height: 100%;
+  width: 100%
+}
+
+section > h1 {
+  padding-bottom: 2vh;
 }

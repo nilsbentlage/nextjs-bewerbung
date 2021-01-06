@@ -27,6 +27,7 @@ function App() {
     <Grid container style={{ maxWidth: "1600px", margin: "auto" }}>
       <Grid
         item
+        container
         xs={12}
         sm={9}
         style={{ maxHeight: "100vh", overflowY: "scroll" }}

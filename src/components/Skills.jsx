@@ -12,11 +12,12 @@ function Skills() {
   };
 
   return (
-    <section id="skills">
+    <section id="skills" >
       <Typography variant="h1">Skills</Typography>
-      <Grid item xs={12} container spacing={6} justify="center">
+      <div style={{ padding: 14 }}> 
+      <Grid item container spacing={6}>
         <Grid item xs={12} md={6} lg={4}>
-          <Paper elevation={8} m={8} className="extraMargin">
+          <Paper elevation={8} className="extraMargin">
             <Typography variant="h4">I'm a Designer</Typography>
             <Typography variant="h5">Print- & Webdesign</Typography>
             <Skill name="Photoshop" value="75" />
@@ -64,6 +65,7 @@ function Skills() {
           </Paper>
         </Grid>
       </Grid>
+      </div>
     </section>
   );
 }
