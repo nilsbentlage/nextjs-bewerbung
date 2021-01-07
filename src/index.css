@@ -33,6 +33,7 @@ div.skill {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .extraMargin {
@@ -55,5 +56,29 @@ section > h1 {
 
 .vita-table-row {
   padding: 0.4rem;
-  margin: 0.4rem 0 !important;
+  margin: 0.8rem 0 !important;
+  border-radius: 8px;
+  transition: .5s ease-in-out;
 }
+
+.vita-table-row:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.08)
+}
+
+.showCaseCard {
+  padding: 2rem
+}
+
+.showCaseDiv {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.showCaseDiv a {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem
+} 

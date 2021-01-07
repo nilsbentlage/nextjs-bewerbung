@@ -59,7 +59,6 @@ function Skills() {
             <Typography variant="h5">Hobbies</Typography>
             <Skill name="DJing and Music" value="50" />
             <Skill name="Mountainbike" value="50" />
-            <Skill name="JavaScript" value="50" />
             <Skill name="Photography" value="90" />
             <Skill name="Gaming" value="75" />
           </Paper>

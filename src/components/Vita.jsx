@@ -3,16 +3,13 @@ import { Typography, Grid, Paper } from "@material-ui/core";
 
 const VitaItem = (props) => {
   return (
-    <Grid
-      item
-      container
-      xs={12}
-      className="vita-table-row"
-    >
-      <Grid item xs={12} md={3}>
-        <Typography align="center">{props.type}</Typography>
+    <Grid item container xs={12} alignItems="center" className="vita-table-row">
+      <Grid item xs={12} md={2}>
+          <Typography align="center" style={{ lineHeight: "100%" }}>
+            {props.type}
+          </Typography>
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} md={7}>
         <Typography>{props.position}</Typography>
         <Typography variant="caption">{props.company}</Typography>
       </Grid>
@@ -39,7 +36,7 @@ function Vita() {
             time="August 2017 – today"
           />
           <VitaItem
-            type="Stduying"
+            type="Studies"
             company="Univsersität Bielefeld, Bielefeld"
             position="Combined Bachelor: Sociology & Politics (unfinished)"
             time="October 2013 – September 2018"
@@ -63,7 +60,7 @@ function Vita() {
             time="September 2009 – October 2009"
           />
           <VitaItem
-            type="Employment"
+            type="Apprenticeship"
             company="Kolbe-Coloco GmbH, Versmold"
             position="Media designer for digital and print media"
             time="September 2006 – August 2009"
@@ -71,16 +68,16 @@ function Vita() {
         </Paper>
         <Paper elevation={8} className="vitaSection">
           <Grid item xs={12}>
-            <Typography variant="h5">Self-employed</Typography>
+            <Typography variant="h5">Self-Employed</Typography>
           </Grid>
           <VitaItem
             type="Business"
             company="nulectric Records, Bielefeld"
-            position="Media designer for digital and print media"
-            time="August 2017 – heute"
+            position="Graphics & Webdesign, CEO"
+            time="August 2018 – today"
           />
           <VitaItem
-            type="Temporary staff"
+            type="Temporary Staff"
             company="symmedia GmbH, Bielefeld"
             position="Media designer for digital and print media"
             time="October 2015 – August 2017"
@@ -92,9 +89,9 @@ function Vita() {
             time="September 2009 – today"
           />
           <VitaItem
-            type="Freier Mitarbeiter"
+            type="Fee Based"
             company="symmedia GmbH, Bielefeld"
-            position="Media designer for digital and print media"
+            position="Freelance Journalist"
             time="September 2009 – August 2014"
           />
         </Paper>
