@@ -39,9 +39,21 @@ div.skill {
   padding: 2rem;
   box-sizing: border-box;
   height: 100%;
-  width: 100%
+  width: 100%;
+}
+
+.vitaSection {
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
 section > h1 {
   padding-bottom: 2vh;
+}
+
+.vita-table-row {
+  padding: 0.4rem;
+  margin: 0.4rem 0 !important;
 }

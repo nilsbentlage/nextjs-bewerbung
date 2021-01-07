@@ -22,46 +22,46 @@ function FabMenu({ anchorEl, Boolean, handleClose }) {
       open={Boolean(anchorEl)}
       onClose={handleClose}
     >
-      <MenuItem onClick={handleClose}>
-        <ListItemIcon>
-          <HomeIcon />
-        </ListItemIcon>
-        <Link href="#home" className="fabMenuLink">
+      <Link href="#home" className="fabMenuLink">
+        <MenuItem onClick={handleClose}>
+          <ListItemIcon>
+            <HomeIcon />
+          </ListItemIcon>
           Home
-        </Link>
-      </MenuItem>
-      <MenuItem onClick={handleClose}>
-        <ListItemIcon>
-          <SchoolIcon />
-        </ListItemIcon>
-        <Link href="#skills" className="fabMenuLink">
+        </MenuItem>
+      </Link>
+      <Link href="#skills" className="fabMenuLink">
+        <MenuItem onClick={handleClose}>
+          <ListItemIcon>
+            <SchoolIcon />
+          </ListItemIcon>
           Skills
-        </Link>
-      </MenuItem>
-      <MenuItem onClick={handleClose}>
-        <ListItemIcon>
-          <ListIcon />
-        </ListItemIcon>
-        <Link href="#vita" className="fabMenuLink">
+        </MenuItem>
+      </Link>
+      <Link href="#vita" className="fabMenuLink">
+        <MenuItem onClick={handleClose}>
+          <ListItemIcon>
+            <ListIcon />
+          </ListItemIcon>
           Vita
-        </Link>
-      </MenuItem>
-      <MenuItem onClick={handleClose}>
-        <ListItemIcon>
-          <ArtTrackIcon />
-        </ListItemIcon>
-        <Link href="#showcase" className="fabMenuLink">
+        </MenuItem>{" "}
+      </Link>
+      <Link href="#showcase" className="fabMenuLink">
+        <MenuItem onClick={handleClose}>
+          <ListItemIcon>
+            <ArtTrackIcon />
+          </ListItemIcon>
           Showcase
-        </Link>
-      </MenuItem>
-      <MenuItem onClick={handleClose}>
-        <ListItemIcon>
-          <PermContactCalendarIcon />
-        </ListItemIcon>
-        <Link href="#contact" className="fabMenuLink">
+        </MenuItem>{" "}
+      </Link>
+      <Link href="#contact" className="fabMenuLink">
+        <MenuItem onClick={handleClose}>
+          <ListItemIcon>
+            <PermContactCalendarIcon />
+          </ListItemIcon>
           Contact
-        </Link>
-      </MenuItem>
+        </MenuItem>{" "}
+      </Link>
     </Menu>
   );
 }
