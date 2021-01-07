@@ -1,12 +1,12 @@
 import React from "react";
-import { Typography, Grid, Paper } from "@material-ui/core";
+import { Typography, Grid, Paper, LinearProgress } from "@material-ui/core";
 
 function Skills() {
   const Skill = (props) => {
     return (
       <div className="skill">
         <Typography component="span">{props.name}</Typography>
-        <progress value={props.value} max="100" style={{ width: "5rem" }} />
+        <LinearProgress value={parseInt(props.value)} variant="determinate" style={{ width: "5rem", height: ".5rem", borderRadius: "4px" }} />
       </div>
     );
   };

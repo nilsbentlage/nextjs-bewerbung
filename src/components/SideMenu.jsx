@@ -1,11 +1,11 @@
 import React from "react";
 
-import { Grid, Link } from "@material-ui/core";
+import { Grid, Button } from "@material-ui/core";
 
 function SideMenuItem(props) {
   return (
     <Grid item xs={12} align="center">
-      <Link href={props.href}>{props.children}</Link>
+        <Button variant="contained" color="primary" style={{width: "120px"}} href={props.href}>{props.children}</Button>
     </Grid>
   );
 }

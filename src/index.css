@@ -71,14 +71,26 @@ section > h1 {
 }
 
 .showCaseDiv {
-  height: 50vh;
+  height: 45vh;
   background-size: cover;
   background-position: center;
   position: relative;
+  border-radius: 4px;
 }
 
 .showCaseDiv a {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem
-} 
+  bottom: 2vw;
+  right: 4vw;
+}
+
+.contactCard {
+  padding: 20px;
+  max-width: clamp(300px, 15vw, 90vw);
+  box-sizing: border-box;
+  margin: auto
+}
+
+.contactCard * {
+  margin: 4px;
+}

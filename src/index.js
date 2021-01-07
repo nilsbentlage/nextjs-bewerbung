@@ -9,16 +9,14 @@ import {
   ThemeProvider,
   responsiveFontSizes,
 } from "@material-ui/core/styles";
-import indigo from "@material-ui/core/colors/indigo";
+import {orange, blue} from "@material-ui/core/colors";
 
 let theme = createMuiTheme({
   spacing: 10,
   palette: {
     type: "dark",
-    primary: indigo,
-    secondary: {
-      main: "#aeea00",
-    },
+    primary: orange,
+    secondary: blue,
   },
   typography: {
     h5: {
