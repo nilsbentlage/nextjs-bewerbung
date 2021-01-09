@@ -88,7 +88,7 @@ function Showcase() {
           elevation={8}
           className="showCaseCard"
         >
-          <Carousel navButtonsAlwaysVisible={true} interval="8000">
+          <Carousel navButtonsAlwaysVisible={true} interval="8000" activeIndicatorProps={{style: { color: "#FF9800" }}}>
             {items.map((item, i) => (
               <Item key={i} item={item} />
             ))}
