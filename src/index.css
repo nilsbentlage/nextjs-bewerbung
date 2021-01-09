@@ -1,11 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(#222, #248);
 }
 
 section {
@@ -54,20 +52,24 @@ section > h1 {
   padding-bottom: 2vh;
 }
 
+#home span {
+  color: white
+}
+
 .vita-table-row {
   padding: 0.4rem;
   margin: 0.8rem 0 !important;
   border-radius: 8px;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .vita-table-row:hover {
-    background-color: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.08)
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.08);
 }
 
 .showCaseCard {
-  padding: 2rem
+  padding: 2rem;
 }
 
 .showCaseDiv {
@@ -88,9 +90,13 @@ section > h1 {
   padding: 20px;
   max-width: clamp(300px, 15vw, 90vw);
   box-sizing: border-box;
-  margin: auto
+  margin: auto;
 }
 
 .contactCard * {
   margin: 4px;
+}
+
+#copyright {
+  color: white
 }

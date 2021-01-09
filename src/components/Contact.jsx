@@ -16,10 +16,16 @@ function Contact() {
           <IconButton href="tel:+4915228783790" target="_blank">
             <PhoneAndroidIcon />
           </IconButton>
-          <IconButton href="mailto:nils.bentlage@googlemail.com" target="_blank">
+          <IconButton
+            href="mailto:nils.bentlage@googlemail.com"
+            target="_blank"
+          >
             <EmailIcon />
           </IconButton>
-          <IconButton href="https://www.linkedin.com/in/nils-bentlage-a45362150/" target="_blank">
+          <IconButton
+            href="https://www.linkedin.com/in/nils-bentlage-a45362150/"
+            target="_blank"
+          >
             <LinkedInIcon />
           </IconButton>
           <IconButton href="https://twitter.com/nbentlage" target="_blank">
@@ -27,6 +33,7 @@ function Contact() {
           </IconButton>
         </Paper>
       </Grid>
+      <Typography id="copyright" align="center">© 2020 | Nils Bentlage</Typography>
     </section>
   );
 }

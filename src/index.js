@@ -9,7 +9,7 @@ import {
   ThemeProvider,
   responsiveFontSizes,
 } from "@material-ui/core/styles";
-import {orange, blue} from "@material-ui/core/colors";
+import { orange, blue } from "@material-ui/core/colors";
 
 let theme = createMuiTheme({
   spacing: 10,
@@ -19,12 +19,13 @@ let theme = createMuiTheme({
     secondary: blue,
   },
   typography: {
+    h1: { color: "white"},
     h5: {
       marginTop: "1rem",
       marginBottom: ".5rem",
-      borderBottom: "1px solid rgba(255,255,255,0.5)"
-    }
-  }
+      borderBottom: "1px solid rgba(255,255,255,0.5)",
+    },
+  },
 });
 
 theme = responsiveFontSizes(theme);

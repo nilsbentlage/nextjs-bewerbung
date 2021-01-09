@@ -58,7 +58,7 @@ const Item = (props) => {
   return (
     <div>
       <Typography variant="h5">{props.item.name}</Typography>
-      <p>{props.item.description}</p>
+      <Typography paragraph>{props.item.description}</Typography>
       <div
         className="showCaseDiv"
         style={{ backgroundImage: "url(" + props.item.img + ")" }}
@@ -88,7 +88,7 @@ function Showcase() {
           elevation={8}
           className="showCaseCard"
         >
-          <Carousel navButtonsAlwaysVisible={true}>
+          <Carousel navButtonsAlwaysVisible={true} interval="8000">
             {items.map((item, i) => (
               <Item key={i} item={item} />
             ))}
