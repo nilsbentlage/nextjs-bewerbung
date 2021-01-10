@@ -4,7 +4,14 @@ import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import TwitterIcon from "@material-ui/icons/Twitter";
 
-import { Grid, Button, Avatar, IconButton, Hidden, Typography } from "@material-ui/core";
+import {
+  Grid,
+  Button,
+  Avatar,
+  IconButton,
+  Hidden,
+  Typography,
+} from "@material-ui/core";
 
 import profilePic from "./profile.jpg";
 
@@ -35,7 +42,13 @@ function Menu() {
     >
       <Grid item xs={12} align="center">
         <Avatar src={profilePic} className="profilePic" alt="Nils Bentlage" />
-        <Typography variant="h6" color="textPrimary" style={{paddingTop: "1rem"}}>Contact Me!</Typography>
+        <Typography
+          variant="h6"
+          color="textPrimary"
+          style={{ paddingTop: "1rem" }}
+        >
+          Contact Me!
+        </Typography>
         <IconButton href="tel:+4915228783790" target="_blank">
           <PhoneAndroidIcon />
         </IconButton>
@@ -57,7 +70,7 @@ function Menu() {
       <SideMenuItem href="#vita">Vita</SideMenuItem>
       <SideMenuItem href="#showcase">Showcase</SideMenuItem>
       <Hidden smUp>
-      <SideMenuItem href="#contact">Contact</SideMenuItem>
+        <SideMenuItem href="#contact">Contact</SideMenuItem>
       </Hidden>
     </Grid>
   );

@@ -12,7 +12,7 @@
       name="viewport"
       content="minimum-scale=1, initial-scale=1, width=device-width"
     />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#ff9800" />
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -33,7 +33,10 @@
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+    <div id="particles-js"></div>
+
     <div id="root"></div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -44,5 +47,11 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script src="particles.min.js"></script>
+    <script defer>
+      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+      particlesJS.load("particles-js", "particlesjs-config.json");
+    </script>
   </body>
 </html>

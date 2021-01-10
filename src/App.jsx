@@ -24,42 +24,44 @@ function App() {
   };
 
   return (
-    <Grid container style={{ maxWidth: "1600px", margin: "auto" }}>
-      <Grid
-        item
-        container
-        xs={12}
-        sm={9}
-        style={{ maxHeight: "100vh", overflowY: "scroll" }}
-      >
-        <Splash />
-        <Skills />
-        <Vita />
-        <Showcase />
+    <div>
+      <Grid container style={{ maxWidth: "1600px", margin: "auto" }}>
+        <Grid
+          item
+          container
+          xs={12}
+          sm={9}
+          style={{ maxHeight: "100vh", overflowY: "scroll" }}
+        >
+          <Splash />
+          <Skills />
+          <Vita />
+          <Showcase />
+          <Hidden smUp>
+            <Contact />
+          </Hidden>
+        </Grid>
+        <Hidden only="xs">
+          <Grid item container sm={3}>
+            <SideMenu />
+          </Grid>
+        </Hidden>
         <Hidden smUp>
-          <Contact />
+          <Fab
+            color="primary"
+            style={{ position: "fixed", bottom: "16px", right: "16px" }}
+            onClick={handleClick}
+          >
+            <MenuIcon />
+          </Fab>
+          <FabMenu
+            anchorEl={anchorEl}
+            Boolean={Boolean}
+            handleClose={handleClose}
+          />
         </Hidden>
       </Grid>
-      <Hidden only="xs">
-        <Grid item container sm={3}>
-          <SideMenu />
-        </Grid>
-      </Hidden>
-      <Hidden smUp>
-        <Fab
-          color="primary"
-          style={{ position: "fixed", bottom: "16px", right: "16px" }}
-          onClick={handleClick}
-        >
-          <MenuIcon />
-        </Fab>
-        <FabMenu
-          anchorEl={anchorEl}
-          Boolean={Boolean}
-          handleClose={handleClose}
-        />
-      </Hidden>
-    </Grid>
+    </div>
   );
 }
 

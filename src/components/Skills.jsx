@@ -14,7 +14,7 @@ function Skills() {
   return (
     <section id="skills" >
       <Typography variant="h1">Skills</Typography>
-      <div style={{ padding: 14 }}> 
+      <div style={{ overflow: "hidden"}}> 
       <Grid item container spacing={6}>
         <Grid item xs={12} md={6} lg={4}>
           <Paper elevation={8} className="extraMargin">
@@ -35,7 +35,7 @@ function Skills() {
         <Grid item xs={12} md={6} lg={4}>
           <Paper elevation={8} m={8} className="extraMargin">
             <Typography variant="h4">I'm a Developer</Typography>
-            <Typography variant="h5">Web-Development</Typography>
+            <Typography variant="h5">Web-Entwicklung</Typography>
             <Skill name="HTML 5" value="75" />
             <Skill name="CSS 3" value="75" />
             <Skill name="JavaScript" value="50" />
@@ -52,14 +52,14 @@ function Skills() {
           <Paper elevation={8} m={8} className="extraMargin">
             <Typography variant="h4">I'm Human</Typography>
             <Typography variant="h5">Softskills</Typography>
-            <Skill name="Empathy" value="75" />
-            <Skill name="Communication" value="90" />
-            <Skill name="Curiosity" value="100" />
-            <Skill name="Initiative" value="75" />
+            <Skill name="Empathie" value="75" />
+            <Skill name="Kommunikation" value="90" />
+            <Skill name="Neugier" value="100" />
+            <Skill name="Eigeninitiative" value="75" />
             <Typography variant="h5">Hobbies</Typography>
-            <Skill name="DJing and Music" value="50" />
+            <Skill name="DJing und Musik" value="50" />
             <Skill name="Mountainbike" value="50" />
-            <Skill name="Photography" value="90" />
+            <Skill name="Fotografie" value="90" />
             <Skill name="Gaming" value="75" />
           </Paper>
         </Grid>
