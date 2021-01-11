@@ -19,7 +19,7 @@ let theme = createMuiTheme({
     secondary: blue,
   },
   typography: {
-    h1: { color: "white"},
+    h1: { color: "white" },
     h5: {
       marginTop: "1rem",
       marginBottom: ".5rem",

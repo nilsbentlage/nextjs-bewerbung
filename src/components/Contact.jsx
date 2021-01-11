@@ -1,5 +1,7 @@
 import React from "react";
-import { Typography, Paper, Grid, IconButton } from "@material-ui/core";
+import { Typography, Paper, Grid, IconButton, Avatar } from "@material-ui/core";
+
+import profilePic from "./profile.jpg";
 
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
@@ -12,7 +14,8 @@ function Contact() {
       <Typography variant="h1">Contact</Typography>
       <Grid item xs={12}>
         <Paper elevation={8} className="contactCard" align="center">
-          <Typography variant="h4">Nils Bentlage</Typography>
+          <Typography variant="h4" gutterBottom>Nils Bentlage</Typography>
+          <Avatar src={profilePic} className="profilePic" alt="Nils Bentlage" />
           <IconButton href="tel:+4915228783790" target="_blank">
             <PhoneAndroidIcon />
           </IconButton>
@@ -33,7 +36,9 @@ function Contact() {
           </IconButton>
         </Paper>
       </Grid>
-      <Typography id="copyright" align="center">© 2020 | Nils Bentlage</Typography>
+      <Typography id="copyright" align="center">
+        © 2020 | Nils Bentlage
+      </Typography>
     </section>
   );
 }

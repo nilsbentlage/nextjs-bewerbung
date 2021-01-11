@@ -14,9 +14,10 @@ section {
   flex-direction: column;
   justify-content: space-evenly;
 }
+
 .MuiAvatar-root {
   width: 50% !important;
-  height: auto !important
+  height: auto !important;
 }
 
 div::-webkit-scrollbar {
@@ -104,10 +105,6 @@ section > h1 {
   max-width: clamp(300px, 15vw, 90vw);
   box-sizing: border-box;
   margin: auto;
-}
-
-.contactCard * {
-  margin: 4px;
 }
 
 #copyright {
