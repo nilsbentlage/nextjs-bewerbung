@@ -6,7 +6,7 @@ import profilePic from "./profile.jpg";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import TwitterIcon from "@material-ui/icons/Twitter";
+import GitHub from "@material-ui/icons/GitHub";
 
 function Contact() {
   return (
@@ -31,8 +31,8 @@ function Contact() {
           >
             <LinkedInIcon />
           </IconButton>
-          <IconButton href="https://twitter.com/nbentlage" target="_blank">
-            <TwitterIcon />
+          <IconButton href="https://github.com/nilsbentlage" target="_blank">
+            <GitHub />
           </IconButton>
         </Paper>
       </Grid>

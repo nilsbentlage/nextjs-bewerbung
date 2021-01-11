@@ -2,7 +2,7 @@ import React from "react";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import TwitterIcon from "@material-ui/icons/Twitter";
+import GitHub from "@material-ui/icons/GitHub";
 
 import {
   Grid,
@@ -46,7 +46,12 @@ function Menu() {
       style={{ height: "100vh" }}
     >
       <Grid item xs={12} align="center">
-        <Avatar src={profilePic} className="profilePic" alt="Nils Bentlage" title="Nils Bentlage" />
+        <Avatar
+          src={profilePic}
+          className="profilePic"
+          alt="Nils Bentlage"
+          title="Nils Bentlage"
+        />
         <Typography
           variant="h6"
           color="textPrimary"
@@ -58,7 +63,10 @@ function Menu() {
         <PopupState variant="popover">
           {(popupState) => (
             <div style={{ display: "inline-block" }}>
-              <IconButton {...bindTrigger(popupState)} title="Mobil: +49 1522 8783790">
+              <IconButton
+                {...bindTrigger(popupState)}
+                title="Mobil: +49 1522 8783790"
+              >
                 <PhoneAndroidIcon />
               </IconButton>
               <Popover
@@ -74,7 +82,7 @@ function Menu() {
               >
                 <Box p={2}>
                   <Typography variant="h6">
-                    <Link href="tel:+49 1522 8783790" target="_blank">
+                    <Link href="tel:+4915228783790" target="_blank">
                       +49 1522 8783790
                     </Link>
                   </Typography>
@@ -83,12 +91,11 @@ function Menu() {
             </div>
           )}
         </PopupState>
-        {/* 
-        <IconButton href="tel:+4915228783790" target="_blank">
-          <PhoneAndroidIcon />
-        </IconButton> */}
-
-        <IconButton href="mailto:nils.bentlage@googlemail.com" target="_blank" title="E-Mail: nils. bentlage@googlemail.com">
+        <IconButton
+          href="mailto:nils.bentlage@googlemail.com"
+          target="_blank"
+          title="E-Mail: nils.bentlage@googlemail.com"
+        >
           <EmailIcon />
         </IconButton>
         <IconButton
@@ -98,8 +105,12 @@ function Menu() {
         >
           <LinkedInIcon />
         </IconButton>
-        <IconButton href="https://twitter.com/nbentlage" target="_blank" title="Twitter: @nbentlage">
-          <TwitterIcon />
+        <IconButton
+          href="https://github.com/nilsbentlage"
+          target="_blank"
+          title="GitHub: nilsbentlage"
+        >
+          <GitHub />
         </IconButton>
       </Grid>
       <SideMenuItem href="#home">Home</SideMenuItem>
