@@ -1,21 +1,7 @@
-![React Logo](https://github.com/vercel/vercel/blob/master/packages/frameworks/logos/react.svg)
+# React Application
 
-# React Example
-
-This directory is a brief example of a [React](https://reactjs.org/) app with [Serverless Functions](https://vercel.com/docs/v2/serverless-functions/introduction) that can be deployed with Vercel and zero configuration.
+This directory is what it looks like, when I try to set up an online-application for a job as a frontend-Developer. It consists of a React app, using Material-UI with all of it's features.
 
 ## Deploy Your Own
 
-Deploy your own React project, along with Serverless Functions, with Vercel.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/vercel/tree/master/examples/create-react-app-functions)
-
-_Live Example: https://create-react-app.now-examples.now.sh/_
-
-### How We Created This Example
-
-To get started with React, along with [Serverless Functions](https://vercel.com/docs/v2/serverless-functions/introduction), with Vercel, you can use the [Create-React-App CLI](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) to initialize the project:
-
-```shell
-$ npx create-react-app my-app
-```
+Feel free to copy this repo, insert your own data and get hired in the end.
