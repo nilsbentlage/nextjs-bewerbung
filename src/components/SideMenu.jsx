@@ -18,7 +18,7 @@ import Box from "@material-ui/core/Box";
 import Popover from "@material-ui/core/Popover";
 import PopupState, { bindTrigger, bindPopover } from "material-ui-popup-state";
 
-import profilePic from "./profile.jpg";
+import profilePic from "./images/profile.jpg";
 
 function SideMenuItem(props) {
   return (

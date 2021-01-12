@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Paper, Grid, IconButton, Avatar } from "@material-ui/core";
 
-import profilePic from "./profile.jpg";
+import profilePic from "./images/profile.jpg";
 
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
