@@ -49,7 +49,7 @@ function App() {
         <Hidden smUp>
           <Fab
             color="primary"
-            style={{ position: "fixed", bottom: "16px", right: "16px" }}
+            style={{ position: "fixed", bottom: "32px", right: "32px" }}
             onClick={handleClick}
           >
             <MenuIcon />
