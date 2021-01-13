@@ -16,7 +16,7 @@ function FabMenu({ anchorEl, Boolean, handleClose }) {
       id="simple-menu"
       anchorEl={anchorEl}
       style={{
-        top: "-64px",
+        top: "-96px",
       }}
       keepMounted
       open={Boolean(anchorEl)}
