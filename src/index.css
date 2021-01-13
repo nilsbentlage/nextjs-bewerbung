@@ -31,10 +31,15 @@ div::-webkit-scrollbar {
 #particles-js {
   width: 100%;
   height: 100%;
+}
+
+.particles-js-canvas-el {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top:0;
-  left:0;
-  z-index: -1
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 a.fabMenuLink {
@@ -67,7 +72,7 @@ section > h1 {
 }
 
 #home span {
-  color: white
+  color: white;
 }
 
 .vita-table-row {
@@ -108,5 +113,5 @@ section > h1 {
 }
 
 #copyright {
-  color: white
+  color: white;
 }
