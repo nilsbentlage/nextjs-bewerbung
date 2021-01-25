@@ -12,7 +12,7 @@ const VitaItem = (props) => {
       justify="flex-start"
     >
       <Hidden xsDown>
-        <Grid item xs={6} md={2}>
+        <Grid item xs={12} md={2}>
           <Typography align="center" style={{ lineHeight: "100%" }}>
             {props.type}
           </Typography>

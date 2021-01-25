@@ -14,8 +14,7 @@ function Skills() {
   return (
     <section id="skills" >
       <Typography variant="h1">Skills</Typography>
-      <div style={{ overflow: "hidden"}}> 
-      <Grid item container spacing={6}>
+      <Grid item container spacing={3}>
         <Grid item xs={12} md={6} lg={4}>
           <Paper elevation={8} className="extraMargin">
             <Typography variant="h4">I'm a Designer</Typography>
@@ -64,7 +63,6 @@ function Skills() {
           </Paper>
         </Grid>
       </Grid>
-      </div>
     </section>
   );
 }
