@@ -14,7 +14,9 @@ function Contact() {
       <Typography variant="h1">Contact</Typography>
       <Grid item xs={12}>
         <Paper elevation={8} className="contactCard" align="center">
-          <Typography variant="h4" gutterBottom>Nils Bentlage</Typography>
+          <Typography variant="h4" gutterBottom>
+            Nils Bentlage
+          </Typography>
           <Avatar src={profilePic} className="profilePic" alt="Nils Bentlage" />
           <IconButton href="tel:+4915228783790" target="_blank">
             <PhoneAndroidIcon />

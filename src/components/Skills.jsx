@@ -6,13 +6,17 @@ function Skills() {
     return (
       <div className="skill">
         <Typography component="span">{props.name}</Typography>
-        <LinearProgress value={parseInt(props.value)} variant="determinate" style={{ width: "5rem", height: ".5rem", borderRadius: "4px" }} />
+        <LinearProgress
+          value={parseInt(props.value)}
+          variant="determinate"
+          style={{ width: "5rem", height: ".5rem", borderRadius: "4px" }}
+        />
       </div>
     );
   };
 
   return (
-    <section id="skills" >
+    <section id="skills">
       <Typography variant="h1">Skills</Typography>
       <Grid item container spacing={3}>
         <Grid item xs={12} md={6} lg={4}>

@@ -84,11 +84,12 @@ function Showcase() {
     <section id="showcase">
       <Typography variant="h1">Showcase</Typography>
       <Grid item xs={12}>
-        <Paper
-          elevation={8}
-          className="showCaseCard"
-        >
-          <Carousel navButtonsAlwaysVisible={true} interval="8000" activeIndicatorProps={{style: { color: "#FF9800" }}}>
+        <Paper elevation={8} className="showCaseCard">
+          <Carousel
+            navButtonsAlwaysVisible={true}
+            interval="8000"
+            activeIndicatorProps={{ style: { color: "#FF9800" } }}
+          >
             {items.map((item, i) => (
               <Item key={i} item={item} />
             ))}
