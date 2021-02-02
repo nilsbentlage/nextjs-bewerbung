@@ -7,10 +7,10 @@
     "@material-ui/icons": "^4.11.2",
     "material-ui-popup-state": "^1.7.1",
     "particles.js": "^2.0.0",
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
     "react-material-ui-carousel": "^2.1.1",
-    "react-scripts": "^3.0.0"
+    "react-scripts": "^4.0.0"
   },
   "scripts": {
     "dev": "react-scripts start",
