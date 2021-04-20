@@ -44,7 +44,7 @@ function FabMenu({ anchorEl, Boolean, handleClose }) {
             <ListIcon />
           </ListItemIcon>
           Vita
-        </MenuItem>{" "}
+        </MenuItem>
       </Link>
       <Link href="#showcase" className="fabMenuLink">
         <MenuItem onClick={handleClose}>
@@ -52,7 +52,7 @@ function FabMenu({ anchorEl, Boolean, handleClose }) {
             <ArtTrackIcon />
           </ListItemIcon>
           Showcase
-        </MenuItem>{" "}
+        </MenuItem>
       </Link>
       <Link href="#contact" className="fabMenuLink">
         <MenuItem onClick={handleClose}>
@@ -60,7 +60,7 @@ function FabMenu({ anchorEl, Boolean, handleClose }) {
             <PermContactCalendarIcon />
           </ListItemIcon>
           Contact
-        </MenuItem>{" "}
+        </MenuItem>
       </Link>
     </Menu>
   );
