@@ -115,3 +115,33 @@ section > h1 {
 #copyright {
   color: white;
 }
+
+.password-protection {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  z-index: 5;
+  line-height: 150%;
+  form {
+    max-width: 80vw;
+    h4, button {
+      margin: 2rem;
+    }
+    input {
+      text-align: center;
+    }
+  }
+
+  #password {
+    font-size: 120%;
+  }
+}
