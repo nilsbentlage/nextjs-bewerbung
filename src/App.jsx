@@ -24,8 +24,9 @@ function App() {
   const [visible, setVisible] = React.useState(false);
   const [error, setError] = React.useState(false);
 
-  const unlock = () => {
+  const unlock = (ev) => {
     // If you find this function, congrants. You found all the Information you could have found on LinkedIn (link below) ;)
+    ev.preventDefault();
     if (document.getElementById("password").value === "rmnwmplr?") {
       setVisible(true);
     } else {
@@ -52,7 +53,7 @@ function App() {
         className="password-protection"
         style={{ display: visible ? "none" : "flex" }}
       >
-        <form onSubmit={unlock} action="#">
+        <form onSubmit={unlock} action="#" id="myForm">
           <Typography variant="h3">Schön, dass Sie da sind!</Typography>
           <Typography variant="h4">Das Passwort, bitte:</Typography>
           <TextField
