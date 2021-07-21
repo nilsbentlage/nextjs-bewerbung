@@ -58,7 +58,7 @@ function App() {
           <Typography variant="h4">Das Passwort, bitte:</Typography>
           <TextField
             error={error}
-            type="text"
+            type="password"
             id="password"
             autoFocus
             autoComplete="off"

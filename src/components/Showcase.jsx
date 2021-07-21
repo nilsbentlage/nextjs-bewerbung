@@ -88,7 +88,11 @@ function Showcase() {
           <Carousel
             navButtonsAlwaysVisible={true}
             interval="8000"
-            activeIndicatorProps={{ style: { color: "#FF9800" } }}
+            activeIndicatorIconButtonProps={{
+              style: {
+                  color: '#f5a900' // 2
+              }
+          }}
           >
             {items.map((item, i) => (
               <Item key={i} item={item} />
