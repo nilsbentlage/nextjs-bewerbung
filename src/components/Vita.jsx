@@ -9,7 +9,7 @@ const VitaItem = (props) => {
       xs={12}
       alignItems="center"
       className="vita-table-row"
-      justify="flex-start"
+      justifyContent="flex-start"
     >
       <Hidden xsDown>
         <Grid item xs={12} md={2}>

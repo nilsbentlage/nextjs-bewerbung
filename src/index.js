@@ -5,13 +5,13 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 import {
-  createMuiTheme,
+  createTheme,
   ThemeProvider,
   responsiveFontSizes,
 } from "@material-ui/core/styles";
 import { orange, blue } from "@material-ui/core/colors";
 
-let theme = createMuiTheme({
+let theme = createTheme({
   spacing: 10,
   palette: {
     type: "dark",

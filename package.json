@@ -5,13 +5,13 @@
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
-    "material-ui-popup-state": "^1.8.3",
-    "node-sass": "^6.0.0",
+    "material-ui-popup-state": "^2.0.0",
+    "node-sass": "^7.0.1",
     "particles.js": "^2.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-material-ui-carousel": "^2.2.6",
-    "react-scripts": "^4.0.3"
+    "react-material-ui-carousel": "^3.1.1",
+    "react-scripts": "^5.0.0"
   },
   "scripts": {
     "dev": "react-scripts start",
