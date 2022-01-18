@@ -7,14 +7,16 @@ import * as serviceWorker from "./serviceWorker";
 import {
   createTheme,
   ThemeProvider,
+  StyledEngineProvider,
   responsiveFontSizes,
-} from "@material-ui/core/styles";
-import { orange, blue } from "@material-ui/core/colors";
+  adaptV4Theme,
+} from "@mui/material/styles";
+import { orange, blue } from "@mui/material/colors";
 
-let theme = createTheme({
+let theme = createTheme(adaptV4Theme({
   spacing: 10,
   palette: {
-    type: "dark",
+    mode: "dark",
     primary: orange,
     secondary: blue,
   },
@@ -26,14 +28,16 @@ let theme = createTheme({
       borderBottom: "1px solid rgba(255,255,255,0.5)",
     },
   },
-});
+}));
 
 theme = responsiveFontSizes(theme);
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    <App />
-  </ThemeProvider>,
+  <StyledEngineProvider injectFirst>
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
+  </StyledEngineProvider>,
   document.getElementById("root")
 );
 

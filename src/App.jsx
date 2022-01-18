@@ -7,7 +7,7 @@ import {
   Typography,
   Button,
   TextField,
-} from "@material-ui/core";
+} from "@mui/material";
 
 import Splash from "./components/Splash";
 import Skills from "./components/Skills";
@@ -17,7 +17,7 @@ import Contact from "./components/Contact";
 import SideMenu from "./components/SideMenu";
 import FabMenu from "./components/FabMenu";
 
-import MenuIcon from "@material-ui/icons/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
 
 function App() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -59,6 +59,7 @@ function App() {
           <TextField
             error={error}
             type="password"
+            variant="standard"
             id="password"
             autoFocus
             autoComplete="off"

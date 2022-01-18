@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid, Paper, Button } from "@material-ui/core";
+import { Typography, Grid, Paper, Button } from "@mui/material";
 import Carousel from "react-material-ui-carousel";
 
 import knotenpunkt from "./images/knotenpunkt.png";

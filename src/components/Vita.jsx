@@ -1,35 +1,36 @@
 import React from "react";
-import { Typography, Grid, Paper, Box, Hidden } from "@material-ui/core";
+import { Typography, Grid, Paper, Box, Hidden } from "@mui/material";
 
 const VitaItem = (props) => {
   return (
     <Grid
-      item
+      item 
       container
       xs={12}
       alignItems="center"
       className="vita-table-row"
       justifyContent="flex-start"
     >
-      <Hidden xsDown>
+      <Hidden smDown>
         <Grid item xs={12} md={2}>
-          <Typography align="center" style={{ lineHeight: "100%" }}>
-            {props.type}
-          </Typography>
+          <Typography align="center">{props.type}</Typography>
         </Grid>
       </Hidden>
-      <Box clone order={{ xs: 2, sm: 2 }}>
-        <Grid item xs={12} md={7}>
-          <Typography>{props.position}</Typography>
-          <Typography variant="caption">{props.company}</Typography>
-        </Grid>
-      </Box>
-
-      <Box clone order={{ xs: 1, sm: 3 }}>
-        <Grid item xs={12} md={3}>
-          <Typography align="center">{props.time}</Typography>
-        </Grid>
-      </Box>
+      <Grid item xs={12} md={7} order={{ xs: 2, sm: 2 }}>
+        <Typography sx={{ textAlign: { xs: "center", sm: "left" } }}>
+          {props.position}
+        </Typography>
+        <Typography
+          variant="caption"
+          display="block"
+          sx={{ textAlign: { xs: "center", sm: "left" } }}
+        >
+          {props.company}
+        </Typography>
+      </Grid>
+      <Grid item xs={12} md={3} order={{ xs: 1, sm: 3 }}>
+        <Typography align="center">{props.time}</Typography>
+      </Grid>
     </Grid>
   );
 };
@@ -45,9 +46,15 @@ function Vita() {
           </Grid>
           <VitaItem
             type="Anstellung"
+            company=".comspace GmbH, Bielefeld"
+            position="Frontend-Entwickler"
+            time="April 2021 – heute"
+          />
+          <VitaItem
+            type="Anstellung"
             company="symmedia GmbH, Bielefeld"
             position="Grafikdesign, UI/UX"
-            time="August 2017 – heute"
+            time="August 2017 – März 2021"
           />
           <VitaItem
             type="Studium"

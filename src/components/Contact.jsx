@@ -1,39 +1,36 @@
 import React from "react";
-import { Typography, Paper, Grid, IconButton, Avatar } from "@material-ui/core";
+import { Typography, Paper, Grid, IconButton, Avatar } from "@mui/material";
 
 import profilePic from "./images/profile.jpg";
 
-import EmailIcon from "@material-ui/icons/Email";
-import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHub from "@material-ui/icons/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
+import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHub from "@mui/icons-material/GitHub";
 
 function Contact() {
   return (
     <section id="contact">
       <Typography variant="h1">Contact</Typography>
-      <Grid item xs={12}>
+      <Grid item xs={12} direction="column" justifyContent="center" display="flex">
         <Paper elevation={8} className="contactCard" align="center">
           <Typography variant="h4" gutterBottom>
             Nils Bentlage
           </Typography>
           <Avatar src={profilePic} className="profilePic" alt="Nils Bentlage" />
-          <IconButton href="tel:+4915228783790" target="_blank">
+          <IconButton href="tel:+4915228783790" target="_blank" size="large">
             <PhoneAndroidIcon />
           </IconButton>
-          <IconButton
-            href="mailto:nils.bentlage@googlemail.com"
-            target="_blank"
-          >
+          <IconButton href="mailto:nils.bentlage@googlemail.com" target="_blank" size="large">
             <EmailIcon />
           </IconButton>
           <IconButton
             href="https://www.linkedin.com/in/nils-bentlage-a45362150/"
             target="_blank"
-          >
+            size="large">
             <LinkedInIcon />
           </IconButton>
-          <IconButton href="https://github.com/nilsbentlage" target="_blank">
+          <IconButton href="https://github.com/nilsbentlage" target="_blank" size="large">
             <GitHub />
           </IconButton>
         </Paper>

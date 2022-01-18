@@ -1,8 +1,8 @@
 import React from "react";
-import EmailIcon from "@material-ui/icons/Email";
-import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHub from "@material-ui/icons/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
+import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHub from "@mui/icons-material/GitHub";
 
 import {
   Grid,
@@ -12,10 +12,10 @@ import {
   Hidden,
   Typography,
   Link,
-} from "@material-ui/core";
+} from "@mui/material";
 
-import Box from "@material-ui/core/Box";
-import Popover from "@material-ui/core/Popover";
+import Box from "@mui/material/Box";
+import Popover from "@mui/material/Popover";
 import PopupState, { bindTrigger, bindPopover } from "material-ui-popup-state";
 
 import profilePic from "./images/profile.jpg";
@@ -63,10 +63,7 @@ function Menu() {
         <PopupState variant="popover">
           {(popupState) => (
             <div style={{ display: "inline-block" }}>
-              <IconButton
-                {...bindTrigger(popupState)}
-                title="Mobil: +49 1522 8783790"
-              >
+              <IconButton {...bindTrigger(popupState)} title="Mobil: +49 1522 8783790" size="large">
                 <PhoneAndroidIcon />
               </IconButton>
               <Popover
@@ -95,21 +92,21 @@ function Menu() {
           href="mailto:nils.bentlage@googlemail.com"
           target="_blank"
           title="E-Mail: nils.bentlage@googlemail.com"
-        >
+          size="large">
           <EmailIcon />
         </IconButton>
         <IconButton
           href="https://www.linkedin.com/in/nils-bentlage-a45362150/"
           target="_blank"
           title="LinkedIn: Nils Bentlage"
-        >
+          size="large">
           <LinkedInIcon />
         </IconButton>
         <IconButton
           href="https://github.com/nilsbentlage"
           target="_blank"
           title="GitHub: nilsbentlage"
-        >
+          size="large">
           <GitHub />
         </IconButton>
       </Grid>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid, Paper, LinearProgress } from "@material-ui/core";
+import { Typography, Grid, Paper, LinearProgress } from "@mui/material";
 
 function Skills() {
   const Skill = (props) => {
