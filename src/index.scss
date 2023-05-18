@@ -92,7 +92,7 @@ section > h1 {
 }
 
 .showCaseDiv {
-  height: 45vh;
+  height: clamp(200px, 60vh, 642px);
   background-size: cover;
   background-position: center;
   position: relative;

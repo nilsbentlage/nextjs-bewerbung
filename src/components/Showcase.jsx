@@ -5,9 +5,10 @@ import Carousel from "react-material-ui-carousel";
 import knotenpunkt from "./images/knotenpunkt.png";
 import nulectric from "./images/nulectric.png";
 import holtex from "./images/holtex.png";
-import greeninc from "./images/greeninc.png";
-import sp1c from "./images/sp1c.png";
+import djskins from "./images/djskins.png";
+import corona from "./images/corona.png";
 import beercount from "./images/beercount.png";
+import elepfandten from "./images/elepfandten.png";
 
 const items = [
   {
@@ -32,18 +33,18 @@ const items = [
     url: "https://hol-tex.de",
   },
   {
-    name: "Green Inc.",
+    name: "DJ-Skins.com | Editor",
     description:
-      "Ein VPS mit TS-Server, Nextcloud und einem schlanken Frontend, das ich mit dem Flat-File CMS »GRAV« umgesetzt habe.",
-    img: greeninc,
-    url: "http://www.greeninc.ga",
+      "Ein Produktkonfigurator für individuelle Skins für DJ-Equipment. Die App wurde mit Svelte umgesetzt.",
+    img: djskins,
+    url: "https://editor.dj-skins.com",
   },
   {
-    name: "SP/1C",
+    name: "CCT - Casumer Corona Tracker",
     description:
-      "Meine erste Web-App dient der Erstellung von Software-Themes und ist seit 2017 auch produktiv im Einsatz.",
-    img: sp1c,
-    url: "http://dev.greeninc.ga/material",
+      "Eine kleine Web-App, die die aktuellen Corona-Zahlen für nutzerdefinierte Landkreise anzeigt. Svelte und RKI-API",
+    img: corona,
+    url: "http://dev.nbmedia.net/coronatracker",
   },
   {
     name: "BeerCount",
@@ -52,7 +53,14 @@ const items = [
     img: beercount,
     url: "https://beercount-2.web.app",
   },
-];
+  {
+    name: "Elepfandten.de",
+    description:
+      "Eine App mit gemeinnützigem Charakter, die das Spenden und Sammeln von Pfandflaschen vereinfacht. React, Ionic und Firebase (WIP).",
+    img: elepfandten,
+    url: "https://www.elepfandten.de",
+  },
+].sort(() => Math.random() - 0.5);
 
 const Item = (props) => {
   return (
@@ -90,9 +98,9 @@ function Showcase() {
             interval="8000"
             activeIndicatorIconButtonProps={{
               style: {
-                  color: '#f5a900' // 2
-              }
-          }}
+                color: "#f5a900", // 2
+              },
+            }}
           >
             {items.map((item, i) => (
               <Item key={i} item={item} />

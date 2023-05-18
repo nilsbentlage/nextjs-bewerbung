@@ -6,7 +6,7 @@ function Splash() {
     <section id="home">
       <div>
         <Typography variant="h1">Nils Bentlage</Typography>
-        <Typography variant="button">Graphics, UI / UX & Frontend</Typography>
+        <Typography variant="button">Web-Development, UI / UX & Design</Typography>
       </div>
     </section>
   );

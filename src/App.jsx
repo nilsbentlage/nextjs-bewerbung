@@ -73,7 +73,7 @@ function App() {
       <Grid
         container
         style={{
-          maxWidth: "1600px",
+          maxWidth: "1720px",
           transition: "all 3s",
           margin: "auto",
           opacity: visible ? 1 : 0,
