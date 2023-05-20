@@ -25,7 +25,7 @@ function App() {
   const [error, setError] = React.useState(false);
 
   const unlock = (ev) => {
-    // If you find this function, congrants. You found all the Information you could have found on LinkedIn (link below) ;)
+    // If you find this function, congrants. You found all the Information you could have found on GitHub (link below) ;)
     ev.preventDefault();
     if (document.getElementById("password").value === "rmnwmplr?") {
       setVisible(true);
@@ -74,7 +74,8 @@ function App() {
         container
         style={{
           maxWidth: "1720px",
-          transition: "all 3s",
+          paddingInline: "1rem",
+          transition: "opacity 1s",
           margin: "auto",
           opacity: visible ? 1 : 0,
         }}

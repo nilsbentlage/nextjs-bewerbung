@@ -89,6 +89,7 @@ section > h1 {
 
 .showCaseCard {
   padding: 2rem;
+  position: relative;
 }
 
 .showCaseDiv {
@@ -133,7 +134,8 @@ section > h1 {
   line-height: 150%;
   form {
     max-width: 80vw;
-    h4, button {
+    h4,
+    button {
       margin: 2rem;
     }
     input {
