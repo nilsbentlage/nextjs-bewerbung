@@ -50,7 +50,8 @@ function Skills() {
               style={{
                 display: "block",
                 textAlign: "center",
-                backgroundColor: "#4c4c4c",
+                backgroundColor: "#252525",
+                marginInline: "-0.5rem",
                 borderRadius: 8,
                 marginTop: 8,
                 paddingBlock: 4,

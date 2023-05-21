@@ -93,17 +93,54 @@ section > h1 {
 }
 
 .showCaseDiv {
-  height: clamp(200px, 60vh, 642px);
   background-size: cover;
   background-position: center;
   position: relative;
   border-radius: 4px;
+  overflow: hidden;
+}
+
+.showCaseDiv img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 1104/642;
+}
+
+.textContent {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  inset: auto 0 0 0;
+  max-width: 100%;
+  transition: background-color 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  .textContent {
+    position: relative;
+    height: 250px;
+    overflow-y: scroll;
+    text-align: center;
+    max-width: calc(100% - 2rem);
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    * {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (pointer: fine) and (min-width: 600px) {
+  .showCaseCard:hover .textContent {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
 }
 
 .showCaseDiv a {
-  position: absolute;
-  bottom: 2vw;
-  right: 4vw;
+  margin-left: auto;
 }
 
 .contactCard {
@@ -146,4 +183,8 @@ section > h1 {
   #password {
     font-size: 120%;
   }
+}
+
+.inactive {
+  filter: brightness(0.5);
 }
